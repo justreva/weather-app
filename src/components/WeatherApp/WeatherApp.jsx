@@ -27,7 +27,8 @@ export default function WeatherApp() {
       return;
     }
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=71a410fb7f8d6bd2c232b0bead54e418`;
+    //USE YOUR OWN API KEY FROM https://openweathermap.org/api
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid={API_KEY}`;
 
     fetch(url)
       .then((res) => {
