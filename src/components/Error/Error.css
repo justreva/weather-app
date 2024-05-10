@@ -1,0 +1,17 @@
+.error-container{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.error__content{
+	background-color: rgb(39, 39, 39);
+	text-align: center;
+	padding: 4rem;
+	border-radius: 10px;
+}
+.error__tittle {
+	color: red;
+}
+.error__desc {
+	color: white;
+}
