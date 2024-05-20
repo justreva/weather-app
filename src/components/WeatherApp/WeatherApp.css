@@ -3,7 +3,8 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-image: url(../../assets/background.jpg);
   background-size: 1920px 1080px;
-	
+  background-repeat: no-repeat;
+  
 }
 .weather{
   height: 90vh;

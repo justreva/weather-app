@@ -8,6 +8,9 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 h3 {
@@ -17,8 +20,8 @@ h3 {
   font-size: 14px;
 }
 .forecast__element img{
-	width: 36px;
-	height: 36px;
+	width: 120px;
+	height: 120px;
 }
 .forecast__element {
   background: rgba(255, 255, 255, 0.15);
@@ -26,26 +29,18 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.43);
   border-radius: 10px;
   backdrop-filter: blur(6.7px);
-  min-width: 400px;
   color: white;
   padding: 20px;
   transition: all 0.5s;
   cursor: pointer;
 	display: flex;
-	justify-content: space-between;
   align-items: center;
-}
-.forecast__element:first-child {
-  min-width: 550px;
-  padding: 30px;
-}
+  flex-direction: column;
 
-.forecast__element:not(:first-child) {
-  margin-top: 20px;
 }
-.forecast__element:hover:not(:first-child) {
-  min-width: 550px;
-  padding: 30px;
+.forecast__element:hover{
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.83);
 }
 
 .forecast__tempeture{
@@ -54,4 +49,16 @@ h3 {
 }
 .forecast__box{
   text-align: center;
+}
+
+.forecast__day{
+  font-weight: 500;
+  font-size: 24px;
+  border-bottom: 1px white solid;
+  padding-bottom: 10px;
+}
+
+.forecast__tempeture{
+  font-weight: 600;
+  font-size: 24px;
 }
