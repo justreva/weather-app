@@ -1,8 +1,12 @@
-.search-bar{
-  background-color: rgb(39, 39, 39);
+.search-bar {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  backdrop-filter: blur(5.7px);
   padding: 1rem;
   display: flex;
   justify-content: center;
+  
 }
 form {
   display: flex;
@@ -16,6 +20,9 @@ form {
   background: none;
   color: white;
   transition: all 0.4s ease;
+}
+.search-bar__input::placeholder {
+color: white;
 }
 .search-bar__input:focus {
   outline: none;

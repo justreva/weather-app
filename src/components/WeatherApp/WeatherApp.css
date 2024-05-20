@@ -1,8 +1,13 @@
 @import "../../../node_modules/normalize.css/normalize.css";
 body {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: rgb(59, 59, 59);
-  
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-image: url(../../assets/background.jpg);
+  background-size: 1920px 1080px;
+	
 }
+.weather{
+  height: 90vh;
+  display: flex;
+  padding: 0px 80px;
 
-
+}

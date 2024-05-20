@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Error } from "../Error/Error";
 import SearchBar from "../SearchBar/SearchBar";
 import WeatherCard from "../WeatherCard/WeatherCard";
-
+import { Forecast } from "../Forecast/Forecast";
 
 import "./WeatherApp.css";
 export default function WeatherApp() {
@@ -28,7 +28,7 @@ export default function WeatherApp() {
     }
 
     //USE YOUR OWN API KEY FROM https://openweathermap.org/api
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid={API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=71a410fb7f8d6bd2c232b0bead54e418`;
 
     fetch(url)
       .then((res) => {
@@ -49,7 +49,10 @@ export default function WeatherApp() {
   return (
     <>
       <SearchBar handleSubmit={handleSubmit} handleChange={handleChange} />
-      {error ? <Error /> : <WeatherCard weather={weather} />}
+      <div className="weather">
+        <WeatherCard weather={weather} />
+        <Forecast />
+      </div>
     </>
   );
 }
