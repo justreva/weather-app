@@ -62,13 +62,14 @@ img {
   flex-direction: column;
   text-align: center;
   font-size: 18px;
+  font-weight: 400;
 }
 .state__name {
   font-size: 13px;
 }
 .tittle {
   margin: 0;
-  color: rgb(161, 161, 161);
+  color: rgb(241, 241, 241);
   font-weight: 600;
 }
 .loading{
