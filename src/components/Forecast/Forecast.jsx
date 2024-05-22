@@ -12,8 +12,6 @@ export const Forecast = () => {
             </div>
             <h3 className="forecast__tempeture">9°C</h3>
           </li>
-         
-    
         </ul>
       </div>
     </div>

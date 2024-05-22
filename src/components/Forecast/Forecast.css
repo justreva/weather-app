@@ -41,6 +41,7 @@ h3 {
 .forecast__element:hover{
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.83);
+  padding: 25px;
 }
 
 .forecast__tempeture{
