@@ -4,14 +4,18 @@
 	margin-top: 50px;
 }
 .error__content{
-	background-color: rgb(39, 39, 39);
+	background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  backdrop-filter: blur(5.7px);
 	text-align: center;
 	padding: 4rem;
 	border-radius: 10px;
 }
 .error__tittle {
-	color: red;
+	color: rgb(255, 255, 255);
 }
 .error__desc {
-	color: white;
+	color: rgb(18, 100, 223);
+	font-weight: 600;
 }
